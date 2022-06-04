@@ -6,7 +6,7 @@ public class ShelfHealth : Health
 
     private void Start()
     {
-        GameManager.Instance.RoundOver += Reset;
+        GameManager.Instance.OnRoundOver += Reset;
     }
 
     private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
