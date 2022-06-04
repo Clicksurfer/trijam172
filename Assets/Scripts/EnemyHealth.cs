@@ -10,9 +10,14 @@
             TakeDamage(collision.gameObject.GetComponent<ShotMovement>().Damage);
             if (IsAlive == false)
             {
-                GameManager.Instance.OnEnemyDestroyed?.Invoke();
-                Destroy(gameObject);
+                Kill();
             }
         }
+    }
+
+    public void Kill()
+    {
+        GameManager.Instance.OnEnemyDestroyed?.Invoke();
+        Destroy(gameObject);
     }
 }

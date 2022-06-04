@@ -43,4 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2237a3a52144a344be4d6bdc4a7ae7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roundsConfig:
+  - {fileID: 11400000, guid: 11da646010c10d64c8470a0cc5ee6d0b, type: 2}
+  - {fileID: 11400000, guid: 3ac3a1de4dda92b459c0aa3442763a82, type: 2}
   shelf: {fileID: 0}
+  roundBufferTime: 3

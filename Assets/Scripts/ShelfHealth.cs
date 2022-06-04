@@ -13,7 +13,7 @@ public class ShelfHealth : Health
     {
         if (collision.transform.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<EnemyHealth>().Kill();
             TakeDamage(1);
             OnShelfHit?.Invoke();   
         }

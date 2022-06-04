@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed515aa656211064caf5ec1de16531d1, type: 3}
-  m_Name: Simple
+  m_Name: Multiples
   m_EditorClassIdentifier: 
   Spawns:
   - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
@@ -20,41 +20,32 @@ MonoBehaviour:
     SpawnDelay: 1
     SpawnPosition: {x: -3, y: 6.5}
   - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 2
-    SpawnPosition: {x: -5, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 3
-    SpawnPosition: {x: -7, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 4
-    SpawnPosition: {x: -5, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 5
-    SpawnPosition: {x: -3, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 6
-    SpawnPosition: {x: -1, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 7
-    SpawnPosition: {x: 1, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 8
+    SpawnDelay: 1
     SpawnPosition: {x: 3, y: 6.5}
   - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 9
+    SpawnDelay: 3
     SpawnPosition: {x: 5, y: 6.5}
+  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
+    SpawnDelay: 3
+    SpawnPosition: {x: -5, y: 6.5}
+  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
+    SpawnDelay: 7
+    SpawnPosition: {x: -6.5, y: 6.5}
+  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
+    SpawnDelay: 7
+    SpawnPosition: {x: 6.5, y: 6.5}
+  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
+    SpawnDelay: 7
+    SpawnPosition: {x: 0, y: 6.5}
+  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
+    SpawnDelay: 10
+    SpawnPosition: {x: -7, y: 6.5}
   - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
     SpawnDelay: 10
     SpawnPosition: {x: 7, y: 6.5}
   - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 11
-    SpawnPosition: {x: 5, y: 6.5}
+    SpawnDelay: 10
+    SpawnPosition: {x: 2.5, y: 6.5}
   - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 12
-    SpawnPosition: {x: 3, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 13
-    SpawnPosition: {x: 1, y: 6.5}
-  - Unit: {fileID: 2090714935070931112, guid: 96c974110e1571c4bbd526bb5bbc1830, type: 3}
-    SpawnDelay: 14
-    SpawnPosition: {x: -1, y: 6.5}
+    SpawnDelay: 10
+    SpawnPosition: {x: -2.5, y: 6.5}

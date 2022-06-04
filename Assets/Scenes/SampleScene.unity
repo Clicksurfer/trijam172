@@ -388,12 +388,24 @@ PrefabInstance:
       objectReference: {fileID: 1001576378776055935}
     - target: {fileID: 7677687085271359942, guid: 7e3087a64a2ef824f8656ab99c167b33, type: 3}
       propertyPath: roundsConfig.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7677687085271359942, guid: 7e3087a64a2ef824f8656ab99c167b33, type: 3}
       propertyPath: roundsConfig.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 11da646010c10d64c8470a0cc5ee6d0b, type: 2}
+    - target: {fileID: 7677687085271359942, guid: 7e3087a64a2ef824f8656ab99c167b33, type: 3}
+      propertyPath: roundsConfig.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3ac3a1de4dda92b459c0aa3442763a82, type: 2}
+    - target: {fileID: 7677687085271359942, guid: 7e3087a64a2ef824f8656ab99c167b33, type: 3}
+      propertyPath: roundsConfig.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: c5dcbbe14b78fae408795b075579629a, type: 2}
+    - target: {fileID: 7677687085271359942, guid: 7e3087a64a2ef824f8656ab99c167b33, type: 3}
+      propertyPath: roundsConfig.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a6e8e103dc798949b8b5e167d946542, type: 2}
     - target: {fileID: 7677687085271359943, guid: 7e3087a64a2ef824f8656ab99c167b33, type: 3}
       propertyPath: m_Name
       value: GameManager

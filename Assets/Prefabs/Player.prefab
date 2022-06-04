@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1664409289002324368}
   - component: {fileID: 7970934913916246756}
   - component: {fileID: 7970934913916246753}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotOrigin: {fileID: 5210551943834359029}
   shotPrefab: {fileID: 1116494827923566685, guid: 1547f21e7831da04ca1c59e9dd20e3e0, type: 3}
-  cooldown: 0.3
+  cooldown: 0.7
 --- !u!61 &7970934913916246756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7970934913995882763}
   - component: {fileID: 7970934913995882762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5210551943834359029}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShotSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

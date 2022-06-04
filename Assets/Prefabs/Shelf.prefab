@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 839940498}
   - component: {fileID: 839940497}
   - component: {fileID: 839940496}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerBounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 944785018}
   - component: {fileID: 944785017}
   - component: {fileID: 944785016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerBounds (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b89fef1e495b74ca8bef1173d5ddd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 5
 --- !u!61 &7034983072654807207
 BoxCollider2D:
   m_ObjectHideFlags: 0
