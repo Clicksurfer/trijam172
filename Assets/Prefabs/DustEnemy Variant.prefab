@@ -8,16 +8,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2756564312173788604, guid: da9398b972498c840a65a41c1727ce0a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3003692569468141051, guid: dc03eca4172095644972d18055f658d4, type: 3}
+    - target: {fileID: 2756564312173788604, guid: da9398b972498c840a65a41c1727ce0a, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2756564312173788604, guid: da9398b972498c840a65a41c1727ce0a, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2756564312173788604, guid: da9398b972498c840a65a41c1727ce0a, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2756564312173788606, guid: da9398b972498c840a65a41c1727ce0a, type: 3}
       propertyPath: m_TagString
@@ -86,6 +90,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2756564312651520905, guid: da9398b972498c840a65a41c1727ce0a, type: 3}
   m_PrefabInstance: {fileID: 4270255270587622177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2090714935553056415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2756564312173788606, guid: da9398b972498c840a65a41c1727ce0a, type: 3}
+  m_PrefabInstance: {fileID: 4270255270587622177}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &1866785174
 Rigidbody2D:
   serializedVersion: 4
@@ -121,3 +130,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody2D: {fileID: 1866785174}
   speed: {x: 3, y: 1}
+--- !u!95 &576556491067202819
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090714935553056415}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a4ee64ace988ba4eb884a9aab3445e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
