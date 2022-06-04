@@ -64,7 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotOrigin: {fileID: 5210551943834359029}
   shotPrefab: {fileID: 1116494827923566685, guid: 1547f21e7831da04ca1c59e9dd20e3e0, type: 3}
-  cooldown: 0.5
+  cooldown: 0.3
 --- !u!61 &7970934913916246756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 55b06983638b8974bac012ef069c6723, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
