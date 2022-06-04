@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private RoundData[] roundsConfig;
     [SerializeField] private ShelfHealth shelf;
     [SerializeField] private float roundBufferTime = 3f;
+    [SerializeField] private TMP_Text displayText;
 
     public Action OnEnemyDestroyed = null;
     public Action OnRoundOver = null;
@@ -29,15 +31,16 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator StartRound()
     {
-        OnRoundOver?.Invoke();
         if (roundsConfig.Length <= round)
         {
-            Debug.Log("Game over");
+            ShowText("Game Over.\nThanks for playing!");
             yield break;
         }
 
-        Debug.LogFormat("Get ready for round {0}!", round + 1);
+        ShowText(string.Format("Get ready for\nround {0}!", round + 1));
         yield return new WaitForSeconds(roundBufferTime);
+        OnRoundOver?.Invoke();
+        HideText();
         SetupRound(roundsConfig[round]);
     }
 
@@ -77,12 +80,27 @@ public class GameManager : MonoBehaviour
     private void CheckGameState()
     {
         if (shelf.IsAlive == false)
-            Debug.Log("Game over");
+        {
+            ShowText("Game Over.\nYou lose.");
+            return;
+        }
         if (enemiesLeft <= 0)
         {
             Debug.Log("Round won");
             round++;
             StartCoroutine(StartRound());
         }
+    }
+
+    private void ShowText(string text)
+    {
+        displayText.text = text;
+        Debug.Log("Showing text: " + text);
+        displayText.gameObject.SetActive(true);
+    }
+
+    private void HideText()
+    {
+        displayText.gameObject.SetActive(false);
     }
 }
