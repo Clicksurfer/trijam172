@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ShelfHealth shelf;
     [SerializeField] private float roundBufferTime = 3f;
     [SerializeField] private TMP_Text displayText;
+    [SerializeField] private AudioSource audioSource;
+
+    [Header("Sfx")]
+    [SerializeField] private AudioClip enemyKill;
+    [SerializeField] private AudioClip gameOver;
 
     public Action OnEnemyDestroyed = null;
     public Action OnRoundOver = null;
@@ -33,6 +38,8 @@ public class GameManager : MonoBehaviour
     {
         if (roundsConfig.Length <= round)
         {
+            audioSource.clip = gameOver;
+            audioSource.Play();
             ShowText("Game Over.\nThanks for playing!");
             yield break;
         }
@@ -74,6 +81,8 @@ public class GameManager : MonoBehaviour
     private void EnemyDestroyed()
     {
         enemiesLeft--;
+        audioSource.clip = enemyKill;
+        audioSource.Play();
         CheckGameState();
     }
 
@@ -83,6 +92,8 @@ public class GameManager : MonoBehaviour
         {
             ShowText("Game Over.\nYou lose.");
             Time.timeScale = 0;
+            audioSource.clip = gameOver;
+            audioSource.Play();
             return;
         }
         if (enemiesLeft <= 0)

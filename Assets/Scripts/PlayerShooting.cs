@@ -5,6 +5,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private Transform shotOrigin;
     [SerializeField] private GameObject shotPrefab;
     [SerializeField] private float cooldown = 0.5f;
+    [SerializeField] private AudioSource shootSfx;
 
     private float timer = 0f;
 
@@ -22,5 +23,6 @@ public class PlayerShooting : MonoBehaviour
     {
         timer = cooldown;
         Instantiate(shotPrefab, shotOrigin.position, Quaternion.Euler(0,0,0));
+        shootSfx.Play();
     }
 }
