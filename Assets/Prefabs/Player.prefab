@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7970934913916246758}
   - component: {fileID: 7970934913916246759}
+  - component: {fileID: 1664409289002324368}
   - component: {fileID: 7970934913916246756}
   - component: {fileID: 7970934913916246753}
   m_Layer: 0
@@ -49,6 +50,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rigidbody: {fileID: 7970934913916246753}
+--- !u!114 &1664409289002324368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7970934913916246757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d1a40ec99dc1848bd44469aaf9ab47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotOrigin: {fileID: 5210551943834359029}
+  shotPrefab: {fileID: 1116494827923566685, guid: 1547f21e7831da04ca1c59e9dd20e3e0, type: 3}
+  cooldown: 0.5
 --- !u!61 &7970934913916246756
 BoxCollider2D:
   m_ObjectHideFlags: 0
