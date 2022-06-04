@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1116494827923566686}
   - component: {fileID: 1116494827923566687}
   - component: {fileID: 1116494827923566684}
+  - component: {fileID: 2882345952038578286}
   m_Layer: 0
   m_Name: Shot
   m_TagString: Shot
@@ -67,8 +68,24 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
+--- !u!70 &2882345952038578286
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116494827923566685}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.15, y: 1}
+  m_Direction: 0
 --- !u!1 &1116494828158032596
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,7 +98,7 @@ GameObject:
   - component: {fileID: 1116494828158032598}
   m_Layer: 0
   m_Name: ShotSprite
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
