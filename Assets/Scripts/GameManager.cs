@@ -79,9 +79,10 @@ public class GameManager : MonoBehaviour
 
     private void CheckGameState()
     {
-        if (shelf.IsAlive == false)
+         if (shelf.IsAlive == false)
         {
             ShowText("Game Over.\nYou lose.");
+            Time.timeScale = 0;
             return;
         }
         if (enemiesLeft <= 0)
